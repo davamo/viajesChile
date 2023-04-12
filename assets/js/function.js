@@ -12,17 +12,5 @@ $(document).ready(function () {
     event.preventDefault();
     alert("Correo enviado");
   })
-
-/*Incluir un tooltip "Enviar por correo" al botón de correo*/
-  $("h4").dblclick(function () {
-    $(this).css({
-      "color": "red"
-    })
-  })
   
-/* toggle Desaparcer/Aparecer el contenido en todas las tarjetas*/
-  $(".card-text").click(function () {
-    $(this).next().toggle("slow")
-  })
 })
-
