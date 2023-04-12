@@ -11,47 +11,55 @@
       integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/6b8f0c7049.js"
+      crossorigin="anonymous"
+    ></script>
 
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body>
     <!-- Inicio Nav-->
-    <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand text-white"
-          ><img src="./assets/img/viajes.svg" width="5%" alt="" /> Viajes
-          Chile</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNavAltMarkup"
-        >
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            <a class="nav-link" href="#quienes-somos">Quienes Somos</a>
-            <a class="nav-link" href="#destacados">Destacados</a>
-            <a class="nav-link" href="#contacto">Contacto</a>
+    <header id="inicio">
+      <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white"
+            ><img src="./assets/img/viajes.svg" width="5%" alt="" /> Viajes
+            Chile</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#inicio"
+                >Inicio</a
+              >
+              <a class="nav-link" href="#quienes-somos">Quienes Somos</a>
+              <a class="nav-link" href="#destacados">Destacados</a>
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
     <!-- Fin Nav-->
 
     <!-- Inicio Carrusel-->
-    <section class="container d-none d-lg-block my-3">
-      <div id="carouselExample" class="carousel slide">
+    <section class="d-none d-lg-block my-3">
+      <div id="my-carousel" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
@@ -78,7 +86,7 @@
         <button
           class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExample"
+          data-bs-target="#my-carousel"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -87,7 +95,7 @@
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExample"
+          data-bs-target="#my-carousel"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -100,12 +108,10 @@
     <!--Inicio Quienes Somos-->
     <section id="quienes-somos" class="container text-center my-5">
       <div class="container-fluid text-center text-white">
-        <h1>Quienes Somos</h1>
+        <h1>¿QUIÉNES SOMOS?</h1>
         <hr class="container" />
-
         <div class="row">
           <div class="col">
-            <i class="fa-solid fa-camera fs-1"></i>
             <div class="row bg-info py-3">
               <i class="fa-solid fa-plane fa-2x"></i>
             </div>
@@ -117,8 +123,6 @@
             </p>
           </div>
           <div class="col">
-            <i class="fa-solid fa-bullhorn fs-1"></i>
-
             <p class="text-start">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
               quaerat quam sapiente voluptate quidem perferendis cupiditate
@@ -130,9 +134,8 @@
             </div>
           </div>
           <div class="col">
-            <i class="fa-regular fa-map fs-1"></i>
             <div class="row bg-info py-3">
-              <i class="fa-solid fa-plane fa-2x"></i>
+              <i class="fa-regular fa-map fs-1" style="color: #ffffff"></i>
             </div>
             <p class="text-start">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
@@ -161,7 +164,7 @@
               <div class="card">
                 <img
                   src="./assets/img/card1.jpg"
-                  class="card-img-top"
+                  class="d-block w-100" 
                   alt="..."
                 />
                 <div class="card-body">
@@ -178,7 +181,7 @@
               <div class="card">
                 <img
                   src="./assets/img/card2.jpg"
-                  class="card-img-top"
+                  class="d-block w-100" 
                   alt="..."
                 />
                 <div class="card-body">
@@ -195,7 +198,7 @@
               <div class="card">
                 <img
                   src="./assets/img/card3.jpg"
-                  class="card-img-top"
+                  class="d-block w-100" 
                   alt="..."
                 />
                 <div class="card-body">
@@ -232,33 +235,79 @@
     <!--Fin Destacados-->
 
     <!--Fin Contacto-->
-    <section id="contacto">
-        <div class="container-fluid text-center text-white">
-            <div class="row">
-              <div class="col">
-                <h2>CONTACTO</h2>
-              </div>
-            </div>
-            <hr class="container" />
-
-            <div class="container text-white text-start">
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Asunto</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <button class="">Enviar</button>
-            </div>
-        </div>    
+    <section id="contacto" class="my-5">
+      <div class="container-fluid text-center text-white">
+        <div class="row">
+          <div class="col">
+            <h2>CONTACTO</h2>
+          </div>
+        </div>
+        <hr class="container" />
+        <div class="container text-white text-start">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Nombre</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder=""
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Asunto</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder=""
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Mensaje</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+          <a
+            id="btnCorreo"
+            class="btn btn-lg bg-info me-4"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            data-bs-title="Presiona para enviar a tu correo"
+            >Enviar</a
+          >
+        </div>
+      </div>
     </section>
     <!--Fin Contacto-->
+
+    <!-- Inicio footer-->
+    <footer class="container-fluid text-white">
+      <div class="row bg-info p-4">
+        <div class="col text-center">VIAJES CHILE</div>
+        <div class="col text-center">
+          <i class="fa-brands fa-github fa-lg mx-3" style="color: #ffffff"></i>
+          <i
+            class="fa-brands fa-linkedin-in fa-lg mx-3"
+            style="color: #ffffff"
+          ></i>
+          <i class="fa-brands fa-twitter fa-lg mx-3" style="color: #ffffff"></i>
+          <i
+            class="fa-brands fa-facebook fa-lg mx-3"
+            style="color: #ffffff"
+          ></i>
+        </div>
+      </div>
+    </footer>
+    <!-- Fin footer-->
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
